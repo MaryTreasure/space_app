@@ -1,0 +1,13 @@
+.main_wrapper {
+    display: grid;
+    grid-template-rows: 100px auto 100px;
+    align-items: center;
+    height: 100%;
+    .content_wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+  }
+  
