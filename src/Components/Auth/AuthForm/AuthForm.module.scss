@@ -1,0 +1,10 @@
+.error_title {
+    display: block;
+
+ &.has_error {
+    color: red;
+ }
+ &.no_error {
+    display: none;
+ }
+}
