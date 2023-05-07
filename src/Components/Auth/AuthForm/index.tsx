@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { CustomInput } from '../../../Commons/CustomInput';
 import styles from './AuthForm.module.scss';
 
@@ -6,18 +6,23 @@ export const AuthForm = () => {
   const [formState, setFormState] = useState({
     name: '',
     email: '',
-    password: '',
+    password: ''
   });
 
   const handleChangeFieldForm = (fieldName: string) => (e: React.ChangeEvent<HTMLInputElement>) => {
     setFormState((prevValues) => ({ ...prevValues, [fieldName]: e.target.value }));
   };
+  useEffect(() => {
+    if (isError && formState.password.length > 5) {
+      setIsError(false);
+    }
+  }, [formState.password]);
 
   const [isError, setIsError] = useState(false);
 
   const handleFinishForm = () => {
     if (formState.password.length < 5) {
-      setIsError(true)
+      setIsError(true);
     } else {
       console.log('AUTH');
     }
@@ -43,7 +48,9 @@ export const AuthForm = () => {
         type="password"
         handleChangeFieldForm={handleChangeFieldForm}
       />
-      <span className={`${styles.error_title} ${isError ? styles.has_error : styles.no_error}`}>Password must be more than 5 characters</span>
+      <span className={`${styles.error_title} ${isError ? styles.has_error : styles.no_error}`}>
+        Password must be more than 5 characters
+      </span>
       <button onClick={handleFinishForm}>Log in</button>
     </div>
   );
