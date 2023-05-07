@@ -6,6 +6,7 @@ import { Route, Routes } from 'react-router-dom';
 import { routes } from './utils/constants/routes';
 import { InfoPage } from './Containers/InfoPage';
 import { PictureOfDayPage } from './Containers/PictureOfDayPage';
+import { AuthPage } from './Containers/AuthPage';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path={routes.MAIN} element={<MainPage />} />
           <Route path={routes.INFOPAGE} element={<InfoPage />} />
           <Route path={routes.APOD} element={<PictureOfDayPage />} />
+          <Route path={routes.AUTH} element={<AuthPage />} />
         </Routes>
       </Layouts>
     </div>

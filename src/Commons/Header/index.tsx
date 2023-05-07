@@ -18,6 +18,7 @@ export const Header = () => {
         <div className={styles.left_menu}>
           <Link to={routes.APOD}>astronomy picture of the day</Link>
           <Link to={routes.PHOTO}>Mars rovers photo</Link>
+          <Link className={styles.auth} to={routes.AUTH}>Log in</Link>
         </div>
       </div>
     </>
