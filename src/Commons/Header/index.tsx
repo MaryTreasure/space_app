@@ -1,15 +1,22 @@
+/* eslint-disable multiline-ternary */
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { routes } from '../../utils/constants/routes';
 import styles from './Header.module.scss';
 import Logo from './solar_infinity-outline.png';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { getUserEmail, getUserName, getUserToken } from '../../store/userData/selectors';
+import { resetUserData } from '../../store/userData';
 
 export const Header = () => {
+  const dispatch = useDispatch();
   const email = useSelector(getUserEmail);
   const name = useSelector(getUserName);
   const token = useSelector(getUserToken);
+
+  const logOutHandler = () => {
+    dispatch(resetUserData());
+  };
   return (
     <>
       <header className={styles.main_menu}>
@@ -23,12 +30,13 @@ export const Header = () => {
         <div className={styles.left_menu}>
           <Link to={routes.APOD}>astronomy picture of the day</Link>
           <Link to={routes.PHOTO}>Mars rovers photo</Link>
-          {token
-            ? <button className={styles.auth}>Log out</button>
-            : <Link className={styles.auth} to={routes.AUTH}>
+          {token ? (
+            <button onClick={logOutHandler} className={styles.auth}>Log out</button>
+          ) : (
+            <Link className={styles.auth} to={routes.AUTH}>
               Log in
             </Link>
-          }
+          )}
         </div>
       </header>
     </>
