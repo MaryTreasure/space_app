@@ -7,6 +7,7 @@ import { routes } from './utils/constants/routes';
 import { InfoPage } from './Containers/InfoPage';
 import { PictureOfDayPage } from './Containers/PictureOfDayPage';
 import { AuthPage } from './Containers/AuthPage';
+import { GalleryPage } from './Containers/GalleryPage';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path={routes.INFOPAGE} element={<InfoPage />} />
           <Route path={routes.APOD} element={<PictureOfDayPage />} />
           <Route path={routes.AUTH} element={<AuthPage />} />
+          <Route path={routes.GALLERY} element={<GalleryPage />} />
         </Routes>
       </Layouts>
     </div>

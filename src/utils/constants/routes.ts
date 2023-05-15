@@ -1,7 +1,7 @@
 export const routes = {
   MAIN: '/',
   APOD: '/apod',
-  PHOTO: '/photo',
+  GALLERY: '/gallery',
   AUTH: '/auth',
   INFOPAGE: '/infopage'
 };

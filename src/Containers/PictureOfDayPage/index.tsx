@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-key */
 import React, { useEffect } from 'react';
 import { PictureOfDayContent } from '../../Components/PictureOfDayContent';
 import { useDispatch, useSelector } from 'react-redux';

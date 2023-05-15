@@ -1,5 +1,4 @@
 import React from 'react';
-import DayPicture from './DayPicture.jpg';
 import styles from './PictureOfDay.module.scss';
 
 interface IProps {

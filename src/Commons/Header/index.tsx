@@ -29,7 +29,7 @@ export const Header = () => {
 
         <div className={styles.left_menu}>
           <Link to={routes.APOD}>astronomy picture of the day</Link>
-          <Link to={routes.PHOTO}>Mars rovers photo</Link>
+          <Link to={routes.GALLERY}>Mars rovers photo</Link>
           {token ? (
             <button onClick={logOutHandler} className={styles.auth}>Log out</button>
           ) : (
