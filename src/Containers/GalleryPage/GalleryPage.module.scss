@@ -1,0 +1,23 @@
+.heading {
+    font-size: 45px;
+    color: #D2743F;
+    font-family: 'Space mono';
+    text-transform: none;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.mars_img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+.back_button {
+   display: inline-block;
+   margin-top: 50px;
+   color: #fff;
+   text-decoration: none;
+   font-size: 20px;
+   padding: 20px;
+   border: #D2743F 2px solid;
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './CustomInput.module.scss';
 
 interface Iprops {
   value: string
@@ -10,7 +11,7 @@ interface Iprops {
 
 export const CustomInput = ({ value, fieldLabel, fieldName, type, handleChangeFieldForm }: Iprops) => {
   return (
-    <div style={{ display: 'grid' }}>
+    <div className={styles.form}>
       <span>{fieldLabel}</span>
       <input value={value} type={type} onChange={handleChangeFieldForm(fieldName)}/>
     </div>

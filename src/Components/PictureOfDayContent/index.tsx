@@ -1,5 +1,8 @@
 import React from 'react';
 import styles from './PictureOfDay.module.scss';
+import { Link } from 'react-router-dom';
+import Arrow from './Arrow.png';
+import { routes } from '../../utils/constants/routes';
 
 interface IProps {
   url: string;
@@ -10,6 +13,10 @@ interface IProps {
 
 export const PictureOfDayContent = ({ url, title, date, explanation }: IProps) => {
   return (
+    <>
+    <Link className={styles.back_button} to={routes.INFOPAGE}>
+    <img src={Arrow} alt="" /> Take me home
+  </Link>
     <div className={styles.content}>
       <img className={styles.picture} src={url} alt="" />
       <div>
@@ -18,5 +25,6 @@ export const PictureOfDayContent = ({ url, title, date, explanation }: IProps) =
         <p>{explanation}</p>
       </div>
     </div>
+    </>
   );
 };

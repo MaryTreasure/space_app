@@ -11,17 +11,15 @@ import { GalleryPage } from './Containers/GalleryPage';
 
 function App() {
   return (
-    <div className={styles.wrapper}>
-      <Layouts>
-        <Routes>
-          <Route path={routes.MAIN} element={<MainPage />} />
-          <Route path={routes.INFOPAGE} element={<InfoPage />} />
-          <Route path={routes.APOD} element={<PictureOfDayPage />} />
-          <Route path={routes.AUTH} element={<AuthPage />} />
-          <Route path={routes.GALLERY} element={<GalleryPage />} />
-        </Routes>
-      </Layouts>
-    </div>
+    <Layouts>
+      <Routes>
+        <Route path={routes.MAIN} element={<MainPage />} />
+        <Route path={routes.INFOPAGE} element={<InfoPage />} />
+        <Route path={routes.APOD} element={<PictureOfDayPage />} />
+        <Route path={routes.AUTH} element={<AuthPage />} />
+        <Route path={routes.GALLERY} element={<GalleryPage />} />
+      </Routes>
+    </Layouts>
   );
 }
 

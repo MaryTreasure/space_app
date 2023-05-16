@@ -8,3 +8,23 @@
     display: none;
  }
 }
+
+.back_button {
+   display: inline-block;
+   margin-top: 50px;
+   color: #fff;
+   text-decoration: none;
+   font-size: 20px;
+   padding: 20px;
+
+   border: #D2743F 2px solid;
+}
+
+.auth_wrapper {
+   height: 1000px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 1124px;
+
+}

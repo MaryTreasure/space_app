@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './Gallery.module.scss';
 
 interface IProps {
   id: number;
@@ -9,8 +10,7 @@ interface IProps {
 export const Gallery = ({ id, camera, img_src }: IProps) => {
   return (
     <div>
-      <img src={img_src} alt="" />
-      <p></p>
+      <img className={styles.img_item} src={img_src} alt="" />
     </div>
-  )
+  );
 };

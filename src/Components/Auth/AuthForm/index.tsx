@@ -3,6 +3,9 @@ import { CustomInput } from '../../../Commons/CustomInput';
 import styles from './AuthForm.module.scss';
 import { useDispatch, useSelector } from 'react-redux';
 import { setUserData } from '../../../store/userData';
+import { Link } from 'react-router-dom';
+import Arrow from './Arrow.png';
+import { routes } from '../../../utils/constants/routes';
 
 export const AuthForm = () => {
   const dispatch = useDispatch();
@@ -33,7 +36,11 @@ export const AuthForm = () => {
     }
   };
   return (
-    <div>
+    <>
+    <Link className={styles.back_button} to={routes.INFOPAGE}>
+    <img src={Arrow} alt="" /> Take me home
+  </Link>
+    <div className={styles.auth_wrapper}>
       <CustomInput
         fieldLabel="Name"
         fieldName="name"
@@ -58,5 +65,6 @@ export const AuthForm = () => {
       </span>
       <button onClick={handleFinishForm}>Log in</button>
     </div>
+    </>
   );
 };
