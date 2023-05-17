@@ -37,7 +37,7 @@ export const GalleryPage = () => {
             photo.map(({ id, camera, img_src }) => (
               <Gallery key={id} camera={camera} img_src={img_src} id={id} />
             ))}
-          {isLoading && <span>Loading...</span>}
+          {isLoading && <span className={styles.loading}>Loading...</span>}
           {isError && <span>Error</span>}
         </div>
       </div>

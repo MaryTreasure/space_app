@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { PictureOfDayContent } from '../../Components/PictureOfDayContent';
 import { useDispatch, useSelector } from 'react-redux';
 import { getPost } from '../../store/posts/effects';
+import styles from './PictureOfDay.module.scss'
 import {
   getPostIsError,
   getDate,
@@ -32,7 +33,7 @@ export const PictureOfDayPage = () => {
       {isSuccess && (
         <PictureOfDayContent url={url} title={title} date={date} explanation={explanation} />
       )}
-      {isLoading && <span>Loading...</span>}
+      {isLoading && <span className={styles.loading}>Loading...</span>}
       {isError && <span>Error</span>}
     </div>
   );
