@@ -63,7 +63,7 @@ export const AuthForm = () => {
       <span className={`${styles.error_title} ${isError ? styles.has_error : styles.no_error}`}>
         Password must be more than 5 characters
       </span>
-      <button onClick={handleFinishForm}>Log in</button>
+      <button className={styles.auth_btn} onClick={handleFinishForm}>Log in</button>
     </div>
     </>
   );

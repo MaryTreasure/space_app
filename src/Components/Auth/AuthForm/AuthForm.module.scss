@@ -25,6 +25,19 @@
    display: flex;
    flex-direction: column;
    justify-content: center;
+   align-items: center;
    width: 1124px;
+
+   .auth_btn {
+      padding: 20px;
+      width: 380px;
+      background-color: #11152A;
+      border: #fff 2px solid;
+      color: #D2743F;
+      font-size: 25px;
+      margin-top: 30px;
+      cursor: pointer;
+      font-family: 'Space Mono';
+   }
 
 }

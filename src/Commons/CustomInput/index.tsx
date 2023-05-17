@@ -12,8 +12,8 @@ interface Iprops {
 export const CustomInput = ({ value, fieldLabel, fieldName, type, handleChangeFieldForm }: Iprops) => {
   return (
     <div className={styles.form}>
-      <span>{fieldLabel}</span>
-      <input value={value} type={type} onChange={handleChangeFieldForm(fieldName)}/>
+      <span className={styles.fieldLabel}>{fieldLabel}</span>
+      <input className={styles.input} value={value} type={type} onChange={handleChangeFieldForm(fieldName)}/>
     </div>
   );
 };

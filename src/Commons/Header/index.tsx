@@ -31,7 +31,7 @@ export const Header = () => {
           <Link to={routes.APOD}>astronomy picture of the day</Link>
           <Link to={routes.GALLERY}>Mars rovers photo</Link>
           {token ? (
-            <button onClick={logOutHandler} className={styles.auth}>Log out</button>
+            <button onClick={logOutHandler} className={styles.escape}>Log out</button>
           ) : (
             <Link className={styles.auth} to={routes.AUTH}>
               Log in
