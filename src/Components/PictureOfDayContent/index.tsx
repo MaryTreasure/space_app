@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './PictureOfDay.module.scss';
 import { Link } from 'react-router-dom';
-import Arrow from './Arrow.png';
+import Arrow from '../../images/btnToHome/arrow.png';
 import { routes } from '../../utils/constants/routes';
 
 interface IProps {

@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getPhoto } from '../../store/galleryData/effects';
 import styles from './GalleryPage.module.scss';
 import { Link } from 'react-router-dom';
-import Arrow from './Arrow.png';
+import arrow from '../../images/btnToHome/arrow.png';
 import {
   getPhotoIsError,
   getPhotoIsLoading,
@@ -27,7 +27,7 @@ export const GalleryPage = () => {
   return (
     <>
       <Link className={styles.back_button} to={routes.INFOPAGE}>
-        <img src={Arrow} alt="" /> Take me home
+        <img src={arrow} alt="" /> Take me home
       </Link>
       <div>
         <h1 className={styles.heading}>View of Mars from rover</h1>

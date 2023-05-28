@@ -4,7 +4,7 @@ import styles from './AuthForm.module.scss';
 import { useDispatch, useSelector } from 'react-redux';
 import { setUserData } from '../../../store/userData';
 import { Link } from 'react-router-dom';
-import Arrow from './Arrow.png';
+import arrow from '../../../images/btnToHome/arrow.png';
 import { routes } from '../../../utils/constants/routes';
 
 export const AuthForm = () => {
@@ -38,7 +38,7 @@ export const AuthForm = () => {
   return (
     <>
     <Link className={styles.back_button} to={routes.INFOPAGE}>
-    <img src={Arrow} alt="" /> Take me home
+    <img src={arrow} alt="" /> Take me home
   </Link>
     <div className={styles.auth_wrapper}>
       <CustomInput

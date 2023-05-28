@@ -1,16 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { routes } from '../../utils/constants/routes';
-import Apod from './APOD.jpg';
+import apod from '../../images/infoPosts/apod.jpg';
 import styles from './InfoPosts.module.scss';
-import Arrow from './Arrow.png';
-import MarsPhoto from './MarsPhoto.jpg';
+import arrow from '../../images/infoPosts/arrow.png';
+import marsPhoto from '../../images/infoPosts/marsPhoto.jpg';
 
 export const InfoPosts = () => {
   return (
     <>
       <div className={styles.info_card}>
-        <img src={Apod} alt="ApodPhoto" />
+        <img src={apod} alt="ApodPhoto" />
         <div className={styles.left_info}>
           <p>
             Discover the cosmos! Each day a different image or photograph of our fascinating
@@ -18,12 +18,12 @@ export const InfoPosts = () => {
             astronomer.
           </p>
           <Link to={routes.APOD}>
-            astronomy picture of the day <img src={Arrow} alt="arrow" />
+            astronomy picture of the day <img src={arrow} alt="arrow" />
           </Link>
         </div>
       </div>
       <div className={styles.info_card}>
-        <img src={MarsPhoto} alt="MarsPhoto" />
+        <img src={marsPhoto} alt="MarsPhoto" />
         <div className={styles.left_info}>
           <p>
             Discover the cosmos! Each day a different image or photograph of our fascinating
@@ -31,7 +31,7 @@ export const InfoPosts = () => {
             astronomer.
           </p>
           <Link to={routes.GALLERY}>
-            Mars rovers photo <img src={Arrow} alt="arrow" />
+            Mars rovers photo <img src={arrow} alt="arrow" />
           </Link>
         </div>
       </div>

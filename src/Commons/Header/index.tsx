@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { routes } from '../../utils/constants/routes';
 import styles from './Header.module.scss';
-import Logo from './solar_infinity-outline.png';
+import Logo from '../../images/header/solar_infinity-outline.png';
 import { useDispatch, useSelector } from 'react-redux';
 import { getUserEmail, getUserName, getUserToken } from '../../store/userData/selectors';
 import { resetUserData } from '../../store/userData';
