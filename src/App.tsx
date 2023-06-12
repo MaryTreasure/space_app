@@ -8,6 +8,10 @@ import { InfoPage } from './Containers/InfoPage';
 import { PictureOfDayPage } from './Containers/PictureOfDayPage';
 import { AuthPage } from './Containers/AuthPage';
 import { GalleryPage } from './Containers/GalleryPage';
+import { SolarSystemPage } from './Containers/SolarSystemPage';
+import { SolarSystemInfoPage } from './Containers/SolarSystemInfoPage';
+import { SunPage } from './Containers/SunPage';
+import { KuiperBeltPage } from './Containers/KuiperBeltPage';
 
 function App() {
   return (
@@ -18,6 +22,10 @@ function App() {
         <Route path={routes.APOD} element={<PictureOfDayPage />} />
         <Route path={routes.AUTH} element={<AuthPage />} />
         <Route path={routes.GALLERY} element={<GalleryPage />} />
+        <Route path={routes.SOLARSYSTEM} element={<SolarSystemPage />} />
+        <Route path={routes.SOLARSYSTEMINFO} element={<SolarSystemInfoPage />} />
+        <Route path={routes.SUNINFO} element={<SunPage />} />
+        <Route path={routes.KUIPERBELTINFO} element={<KuiperBeltPage />} />
       </Routes>
     </Layouts>
   );

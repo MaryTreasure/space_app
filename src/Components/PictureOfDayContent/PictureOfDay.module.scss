@@ -9,7 +9,7 @@
     .heading {
         font-size: 30px;
         font-weight: 400;
-        color: #D2743F;
+        color: var(--color-orange);
     }
     p {
         font-size: 20px;
@@ -18,10 +18,10 @@
 .back_button {
     display: inline-block;
     margin-top: 50px;
-    color: #fff;
+    color: var(--color-white);
     text-decoration: none;
     font-size: 20px;
     padding: 20px;
  
-    border: #D2743F 2px solid;
+    border: var(--border);
  }

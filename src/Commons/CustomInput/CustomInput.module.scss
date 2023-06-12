@@ -1,3 +1,5 @@
+@import "../../vars.scss";
+
 .form {
     display: flex;
     flex-direction: column;
@@ -5,11 +7,11 @@
 
 
     .input {
-        background-color: #11152A;
-        border: 2px solid #D2743F;
+        background-color: var(--color-blue);
+        border: var(--border);
         padding: 10px;
         margin: 10px;
-        color: #fff;
+        color: var(--color-white);
         font-size: 18px;
     }
 

@@ -1,5 +1,5 @@
 .main_page {
-    color: #D2743F;
+    color: var(--color-orange);
     background-image:linear-gradient( to right, rgba(17, 21, 42, 1) 120px, rgba(255, 255, 255, 0)),  url("../../images/mainInfo/planet.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -12,20 +12,20 @@
 
 h1 {
     font-size: 230px;
-    font-family: 'Ubuntu';
+    font-family: var(--font-family-ubuntu);
     text-transform: uppercase;
     margin: 0;
 }
 
 .main_btn {
-    background-color: #11152A;
-    border: 2px #D2743F solid;
-    color: #fff;
+    background-color: var(--color-blue);
+    border: var(--border);
+    color: var(--color-white);
     font-size: 20px;
     padding: 15px 0px;
     margin: 50px auto;
     display: block;
-    font-family: 'Space mono';
+    font-family: var(--font-family-space);
     width: 350px;
     text-decoration: none;
     text-align: center;

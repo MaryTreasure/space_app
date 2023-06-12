@@ -2,8 +2,8 @@
     display: flex;
     justify-content: end;
     gap: 40px;
-    padding-right: 60px;
-    background-color: rgba(0, 0, 0, 0.208);
+    padding-right: var(--margin-side);
+    background-color: var(--color-opacity-black);
     align-items: center;
     padding-top: 20px;
     a {

@@ -1,0 +1,81 @@
+.header {
+    text-align: center;
+    font-size: var(--header-big);
+    font-weight: var(--header-weight);
+    color: var(--color-orange);
+    text-transform: var(--text-normal);
+    font-family: var(--font-family-space);
+}
+
+.posterBlock {
+    max-width: 1800px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+    p {
+        font-size: var(--fonr-size-regular);
+    }
+    .posterText {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+
+        .posterTextHeader {
+            color: var(--color-orange);
+            text-transform: var(--text-upercase);
+        }
+    }
+}
+
+.mainInfo {
+    max-width: 1800px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--fonr-size-regular);
+    gap: 90px;
+    align-items: center;
+
+    .leftPartMain {
+        max-width: 1024px;
+        height: 100%;
+        padding: 90px;
+        border: var(--border);
+    }
+}
+
+.factsHeader {
+    text-align: center;
+    font-size: var(--header-medium);
+    font-weight: var(--header-weight);
+    color: var(--color-orange);
+    text-transform: var(--text-normal);
+    font-family: var(--font-family-space);
+}
+
+.facts {
+    max-width: 1800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 50px;
+    margin: 50px auto;
+
+    .factCard {
+        max-width: 565px;
+        height: 381px;
+        border: var(--border);
+        box-sizing: border-box;
+        padding: 20px 42px;
+        p {
+            font-size: 20px;
+        }
+        h2 {
+            font-weight: var(--header-weight);
+            font-size: 50px;
+            margin: 0;
+            color: var(--color-orange);
+            text-align: center;
+        }
+    }
+}

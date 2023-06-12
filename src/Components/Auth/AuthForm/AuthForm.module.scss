@@ -12,12 +12,12 @@
 .back_button {
    display: inline-block;
    margin-top: 50px;
-   color: #fff;
+   color: var(--color-white);
    text-decoration: none;
    font-size: 20px;
    padding: 20px;
 
-   border: #D2743F 2px solid;
+   border: var(--border);
 }
 
 .auth_wrapper {
@@ -31,13 +31,13 @@
    .auth_btn {
       padding: 20px;
       width: 380px;
-      background-color: #11152A;
-      border: #fff 2px solid;
-      color: #D2743F;
+      background-color: var(--color-blue);
+      border: var(--border);
+      color: var(--color-orange);
       font-size: 25px;
       margin-top: 30px;
       cursor: pointer;
-      font-family: 'Space Mono';
+      font-family: var(--font-family-space);
    }
 
 }

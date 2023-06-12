@@ -1,15 +1,17 @@
+@import "../../vars.scss";
+
 .main_menu {
     display: flex;
     justify-content: space-between;
     width: 100%;
     height: 100px;
-    font-family: 'Space Mono';
+    font-family: var(--font-family-space);
     font-size: 20px;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.208);
+    background-color: var(--color-opacity-black);
 
     .logo {
-        margin-left: 60px;
+        margin-left: var(--margin-side);
         display: flex;
         justify-content: space-between;
         gap: 12px;
@@ -19,9 +21,9 @@
 
 
     a {
-        margin-right: 60px;
+        margin-right: var(--margin-side);
         text-decoration: none;
-        color: #fff;
+        color: var(--color-white);
         align-self: center;
     }
     .left_menu {
@@ -31,24 +33,24 @@
     .main_logo {
         
         font-size: 40px;
-        color: #D2743F;
+        color: var(--color-orange);
         margin-top: -8px;
     }
 
     .auth {
         padding: 12px 50px;
-        border: #D2743F 2px solid;
+        border: var(--border);
     }
 
     .escape {
         padding: 12px 30px;
-        border: #fff 2px solid;
-        margin-right: 60px;
-        background-color: #11152A;
-        color: #fff;
+        border: var(--border);
+        margin-right: var(--margin-side);
+        background-color: var(--color-blue);
+        color: var(--color-white);
         width: 176px;
         height: 54px;
         font-size: 20px;
-        font-family: 'Space Mono';
+        font-family: var(--font-family-space);
     }
 }

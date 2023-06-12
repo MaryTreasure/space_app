@@ -3,7 +3,7 @@
     grid-template-rows: 100px auto 100px;
     align-items: center;
     height: 100%;
-    font-family: 'Space Mono';
+    font-family: var(--font-family-space);
     .content_wrapper {
       margin: auto;
     }

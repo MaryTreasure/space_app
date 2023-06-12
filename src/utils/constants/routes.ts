@@ -3,5 +3,11 @@ export const routes = {
   APOD: '/apod',
   GALLERY: '/gallery',
   AUTH: '/auth',
-  INFOPAGE: '/infopage'
+  INFOPAGE: '/infopage',
+  PLANETS: '/planets',
+  SOLARSYSTEM: '/solarsystem',
+  SOLARSYSTEMINFO: '/solarsysteminfo',
+  SUNINFO: '/suninfo',
+  KUIPERBELTINFO: '/kuiperbeltinfo'
+
 };
