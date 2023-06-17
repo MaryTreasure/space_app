@@ -8,13 +8,13 @@ export const PlanetsMenu = () => {
     <div className={styles.topMenuBorder}>
       <div className={styles.topMenu}>
         <Link to={routes.PLANETS}>Mercury</Link>
-        <Link to={routes.PLANETS}>Venus</Link>
-        <Link to={routes.PLANETS}>Earth</Link>
-        <Link to={routes.PLANETS}>Mars</Link>
-        <Link to={routes.PLANETS}>Jupiter</Link>
-        <Link to={routes.PLANETS}>Saturn</Link>
-        <Link to={routes.PLANETS}>Uranus</Link>
-        <Link to={routes.PLANETS}>Neptun</Link>
+        <Link to={routes.VENUS}>Venus</Link>
+        <Link to={routes.EARTH}>Earth</Link>
+        <Link to={routes.MARS}>Mars</Link>
+        <Link to={routes.JUPITER}>Jupiter</Link>
+        <Link to={routes.SATURN}>Saturn</Link>
+        <Link to={routes.URANUS}>Uranus</Link>
+        <Link to={routes.NEPTUN}>Neptun</Link>
       </div>
     </div>
   );

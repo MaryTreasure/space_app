@@ -8,5 +8,12 @@ export const routes = {
   SOLARSYSTEM: '/solarsystem',
   SOLARSYSTEMINFO: '/solarsysteminfo',
   SUNINFO: '/suninfo',
-  KUIPERBELTINFO: '/kuiperbeltinfo'
+  KUIPERBELTINFO: '/kuiperbeltinfo',
+  VENUS: '/venus',
+  EARTH: '/earth',
+  MARS: '/mars',
+  JUPITER: '/jupiter',
+  SATURN: '/saturn',
+  URANUS: '/uranus',
+  NEPTUN: '/neptun'
 };
