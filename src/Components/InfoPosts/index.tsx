@@ -59,7 +59,7 @@ export const InfoPosts = () => {
             compression of a gas and dust cloud approximately 4.57 billion years ago. The sun is not
             a planet.
           </p>
-          <Link to={routes.GALLERY}>
+          <Link to={routes.PLANETS}>
             Planets <img src={arrow} alt="arrow" />
           </Link>
         </div>

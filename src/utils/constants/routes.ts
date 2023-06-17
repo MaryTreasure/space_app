@@ -9,5 +9,4 @@ export const routes = {
   SOLARSYSTEMINFO: '/solarsysteminfo',
   SUNINFO: '/suninfo',
   KUIPERBELTINFO: '/kuiperbeltinfo'
-
 };

@@ -7,7 +7,7 @@ export const MainInfo = () => {
   return (
     <>
       <div className={styles.main_page}>
-        <h1>Space</h1>
+        <h1 className={styles.mainHeader}>Space</h1>
       </div>
       <Link className={styles.main_btn} to={routes.INFOPAGE}>See into the stars!</Link>
     </>

@@ -12,6 +12,7 @@ import { SolarSystemPage } from './Containers/SolarSystemPage';
 import { SolarSystemInfoPage } from './Containers/SolarSystemInfoPage';
 import { SunPage } from './Containers/SunPage';
 import { KuiperBeltPage } from './Containers/KuiperBeltPage';
+import { PlanetsPage } from './Containers/PlanetsPage';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path={routes.SOLARSYSTEMINFO} element={<SolarSystemInfoPage />} />
         <Route path={routes.SUNINFO} element={<SunPage />} />
         <Route path={routes.KUIPERBELTINFO} element={<KuiperBeltPage />} />
+        <Route path={routes.PLANETS} element={<PlanetsPage />} />
       </Routes>
     </Layouts>
   );

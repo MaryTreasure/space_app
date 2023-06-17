@@ -11,6 +11,22 @@ body {
 
     width: 100vw;
     height: 100vh;
+
+    p {
+      font-size: 25px;
+    }
+
+    h2 {
+      font-size: var(--header-medium);
+      font-weight: var(--header-weight);
+      color: var(--color-orange);
+    }
+
+    h1 {
+      font-size: var(--header-big);
+      font-weight: var(--header-weight);
+      color: var(--color-orange);
+    }
    
   }
 

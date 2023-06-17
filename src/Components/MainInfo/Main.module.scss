@@ -10,11 +10,12 @@
 
 }
 
-h1 {
+.mainHeader {
     font-size: 230px;
     font-family: var(--font-family-ubuntu);
     text-transform: uppercase;
     margin: 0;
+    font-weight: 600;
 }
 
 .main_btn {
