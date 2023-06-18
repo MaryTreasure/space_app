@@ -1,21 +1,21 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { routes } from '../../utils/constants/routes';
 import styles from './PlanetsMenu.module.scss';
 
 export const PlanetsMenu = () => {
   return (
     <div className={styles.topMenuBorder}>
-      <div className={styles.topMenu}>
-        <Link to={routes.PLANETS}>Mercury</Link>
-        <Link to={routes.VENUS}>Venus</Link>
-        <Link to={routes.EARTH}>Earth</Link>
-        <Link to={routes.MARS}>Mars</Link>
-        <Link to={routes.JUPITER}>Jupiter</Link>
-        <Link to={routes.SATURN}>Saturn</Link>
-        <Link to={routes.URANUS}>Uranus</Link>
-        <Link to={routes.NEPTUN}>Neptun</Link>
-      </div>
+      <ul className={styles.topMenu}>
+        <li><NavLink to={routes.PLANETS} className={({ isActive }) => (isActive ? styles.active : undefined)}>Mercury</NavLink></li>
+        <li><NavLink to={routes.VENUS} className={({ isActive }) => (isActive ? styles.active : undefined)}>Venus</NavLink></li>
+        <li><NavLink to={routes.EARTH} className={({ isActive }) => (isActive ? styles.active : undefined)}>Earth</NavLink></li>
+        <li><NavLink to={routes.MARS} className={({ isActive }) => (isActive ? styles.active : undefined)}>Mars</NavLink></li>
+        <li><NavLink to={routes.JUPITER} className={({ isActive }) => (isActive ? styles.active : undefined)}>Jupiter</NavLink></li>
+        <li><NavLink to={routes.SATURN} className={({ isActive }) => (isActive ? styles.active : undefined)}>Saturn</NavLink></li>
+        <li><NavLink to={routes.URANUS} className={({ isActive }) => (isActive ? styles.active : undefined)}>Uranus</NavLink></li>
+        <li><NavLink to={routes.NEPTUN} className={({ isActive }) => (isActive ? styles.active : undefined)}>Neptun</NavLink></li>
+      </ul>
     </div>
   );
 };

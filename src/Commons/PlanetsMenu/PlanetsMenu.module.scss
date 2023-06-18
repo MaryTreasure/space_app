@@ -9,6 +9,11 @@
         margin: auto;
         align-items: center;
         padding: 0 40px;
+        list-style: none;
+
+        .active {
+            color: var(--color-orange);
+        }
         
         a {
             text-decoration: none;
@@ -17,8 +22,8 @@
         }
 
         a:hover {
-content: '';
-color: var(--color-orange);
+            content: '';
+            color: var(--color-orange);
         }
     }
 }

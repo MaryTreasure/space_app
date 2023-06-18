@@ -1,10 +1,5 @@
 .header {
     text-align: center;
-    font-size: var(--header-big);
-    font-weight: var(--header-weight);
-    color: var(--color-orange);
-    text-transform: var(--text-normal);
-    font-family: var(--font-family-space);
 }
 
 .posterBlock {
@@ -12,9 +7,6 @@
     margin: 100px auto;
     display: flex;
     justify-content: space-between;
-    p {
-        font-size: var(--fonr-size-regular);
-    }
     .posterText {
         display: flex;
         flex-direction: column;
@@ -33,7 +25,6 @@
     margin: 100px auto;
     display: flex;
     justify-content: space-between;
-    font-size: var(--fonr-size-regular);
     gap: 90px;
     align-items: center;
 
@@ -47,11 +38,6 @@
 
 .factsHeader {
     text-align: center;
-    font-size: var(--header-medium);
-    font-weight: var(--header-weight);
-    color: var(--color-orange);
-    text-transform: var(--text-normal);
-    font-family: var(--font-family-space);
 }
 
 .facts {
@@ -71,10 +57,7 @@
             font-size: 20px;
         }
         h2 {
-            font-weight: var(--header-weight);
-            font-size: 50px;
             margin: 0;
-            color: var(--color-orange);
             text-align: center;
         }
     }

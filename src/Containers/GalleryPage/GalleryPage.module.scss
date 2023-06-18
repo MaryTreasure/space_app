@@ -1,7 +1,4 @@
 .heading {
-    font-size: 45px;
-    color: var(--color-orange);
-    font-family: var(--font-family-space);
     text-transform: none;
     text-align: center;
     margin: 50px 0;
@@ -9,7 +6,7 @@
 
 .mars_img {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 50px;
 }
 .back_button {

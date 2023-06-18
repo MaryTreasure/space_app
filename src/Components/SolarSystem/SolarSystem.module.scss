@@ -1,10 +1,6 @@
 .header {
     text-align: center;
-    font-size: var(--header-big);
-    font-family: var(--font-family-space);
-    color: var(--color-orange);
-    text-transform: var(--text-normal);
-    font-weight: var(--header-weight);
+
 }
 
 .block {
@@ -18,14 +14,6 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        h2 {
-            font-size: var(--header-medium);
-            color: var(--color-orange);
-            font-weight: var(--header-weight);
-        }
-        p {
-            font-size: var(--fonr-size-regular);
-        }
         .link {
             font-size: var(--text-link);
             text-decoration: none;

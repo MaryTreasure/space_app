@@ -24,11 +24,6 @@
 
 .factsHeader {
     text-align: center;
-    font-size: var(--header-medium);
-    font-weight: var(--header-weight);
-    color: var(--color-orange);
-    text-transform: var(--text-normal);
-    font-family: var(--font-family-space);
 }
 
 .facts {
@@ -48,10 +43,7 @@
             font-size: 20px;
         }
         h2 {
-            font-weight: var(--header-weight);
-            font-size: 50px;
             margin: 0;
-            color: var(--color-orange);
             text-align: center;
         }
     }
