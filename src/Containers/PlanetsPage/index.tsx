@@ -1,6 +1,6 @@
 import React from 'react';
-import { PlanetsInfo } from '../../Components/PlanetsInfo';
+import { Mercury } from '../../Components/Planets/Mercury';
 
 export const PlanetsPage = () => {
-  return <PlanetsInfo />;
+  return <Mercury />;
 };

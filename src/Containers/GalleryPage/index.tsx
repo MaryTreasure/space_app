@@ -29,7 +29,7 @@ export const GalleryPage = () => {
       <Link className={styles.back_button} to={routes.INFOPAGE}>
         <img src={arrow} alt="" /> Take me home
       </Link>
-      <div>
+      <div className={styles.content}>
         <h1 className={styles.heading}>View of Mars from rover</h1>
         <div className={styles.mars_img}>
           {isSuccess &&

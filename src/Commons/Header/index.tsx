@@ -17,6 +17,7 @@ export const Header = () => {
         </div>
 
         <div className={styles.left_menu}>
+          <Link to={routes.INFOPAGE}>Home</Link>
           <Link to={routes.APOD}>Astronomy picture of the day</Link>
           <Link to={routes.GALLERY}>Mars rovers photo</Link>
           <Link to={routes.SOLARSYSTEM}>Solar System</Link>

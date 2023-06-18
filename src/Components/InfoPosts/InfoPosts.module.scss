@@ -6,13 +6,17 @@
     border: var(--border);
     padding: 30px;
     gap: 50px;
-    margin-bottom: 50px;
+    margin: 50px 0;
     font-size: 20px;
 
     .left_info {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        
+        p {
+            font-size: 20px;
+        }
 
         a {
             text-decoration: none;

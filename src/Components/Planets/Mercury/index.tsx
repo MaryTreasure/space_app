@@ -1,16 +1,16 @@
 import React from 'react';
-import Mercury from '../../images/planets/mercury/mercury.png';
+import MercuryImg from '../../../images/planets/mercury/mercury.png';
 import styles from './PlanetsInfo.module.scss';
-import Planet from '../../images/planets/mercury/planet.jpg';
-import Sky from '../../images/planets/mercury/sky.jpg';
-import { LayoutsPlanets } from '../../Commons/LayoutsPlanets';
+import Planet from '../../../images/planets/mercury/planet.jpg';
+import Sky from '../../../images/planets/mercury/sky.jpg';
+import { LayoutsPlanets } from '../../../Commons/LayoutsPlanets';
 
-export const PlanetsInfo = () => {
+export const Mercury = () => {
   return (
     <LayoutsPlanets>
       <>
         <div className={styles.mainBlock}>
-          <img src={Mercury} alt="arrow" />
+          <img src={MercuryImg} alt="arrow" />
           <div className={styles.mainText}>
             <h2>Mercury</h2>
             <p>
