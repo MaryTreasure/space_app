@@ -2,6 +2,7 @@
 
 .main_menu {
     display: flex;
+    position: relative;
     justify-content: space-between;
     width: 100vw;
     height: 100px;
@@ -15,9 +16,7 @@
         justify-content: space-between;
         gap: 12px;
         align-items: center;
-
     }
-
 
     a {
         margin-right: var(--margin-side);
@@ -25,10 +24,7 @@
         color: var(--color-white);
         align-self: center;
     }
-    .left_menu {
-        display: flex;
-        gap: 70px;
-    }
+    
     .main_logo {
         
         font-size: 40px;
@@ -36,20 +32,42 @@
         margin-top: -8px;
     }
 
-    .auth {
-        padding: 12px 50px;
-        border: var(--border);
+}
+.burger {
+    display: none;
+}
+.left_menu {
+    display: flex;
+    list-style: none;
+}
+
+@media screen and (max-width: 1500px) {
+    .burger {
+        display: block;
+        position: absolute;
+        right: 60px;
+        top: 35px;
+        cursor: pointer;
+        z-index: 10;
     }
 
-    .escape {
-        padding: 12px 30px;
-        border: var(--border);
-        margin-right: var(--margin-side);
-        background-color: var(--color-blue);
-        color: var(--color-white);
-        width: 176px;
-        height: 54px;
-        font-size: 20px;
-        font-family: var(--font-family-space);
+    .left_menu {
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        gap: 30px;
+        margin: 0;
+        right: -100%;
+        top: 100px;
+        bottom: 0;
+        width: 100%;
+        height: 300px;
+        padding: 0;
+        background-color: var(--color-opacity-black);
+        transition: right 1s;
+    }
+
+    .active {
+        right: 0;
     }
 }
