@@ -12,7 +12,7 @@ export const InfoPosts = () => {
   return (
     <>
       <div className={styles.info_card}>
-        <img src={apod} alt="ApodPhoto" />
+        <div className={styles.info_card_img}><img src={apod} alt="ApodPhoto" /></div>
         <div className={styles.left_info}>
           <p>
             Discover the cosmos! Each day a different image or photograph of our fascinating
@@ -25,7 +25,7 @@ export const InfoPosts = () => {
         </div>
       </div>
       <div className={styles.info_card}>
-        <img src={marsPhoto} alt="MarsPhoto" />
+        <div className={styles.info_card_img}><img src={marsPhoto} alt="MarsPhoto" /></div>
         <div className={styles.left_info}>
           <p>
             Discover the cosmos! Each day a different image or photograph of our fascinating
@@ -38,7 +38,7 @@ export const InfoPosts = () => {
         </div>
       </div>
       <div className={styles.info_card}>
-        <img src={solarSystem} alt="Solar system" />
+        <div className={styles.info_card_img}><img src={solarSystem} alt="Solar system" /></div>
         <div className={styles.left_info}>
           <p>
             The solar system formed almost five billion years ago. It all started with a rotating
@@ -51,7 +51,7 @@ export const InfoPosts = () => {
         </div>
       </div>
       <div className={styles.info_card}>
-        <img src={planets} alt="Planets" />
+        <div className={styles.info_card_img}><img src={planets} alt="Planets" /></div>
         <div className={styles.left_info}>
           <p>
             The solar system is a planetary system that includes the central star - the Sun - and

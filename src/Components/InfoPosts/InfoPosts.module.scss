@@ -29,3 +29,70 @@
 
     }
 }
+
+@media screen and (max-width: 1200px) {
+    /* На устройства 1024px*/
+
+}
+
+@media screen and (max-width: 1010px) {
+
+/* На устройства 768px*/
+.info_card {
+    flex-direction: column;
+}
+
+.info_card_img {
+    display: flex;
+    justify-content: center;
+}
+}
+
+@media screen and (max-width: 754px) {
+/* На устройства 480px*/
+
+.info_card_img {
+    width: 450px;
+    height: 278px;
+    align-self: center;
+}
+
+.info_card_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.info_card {
+    padding: 0;
+
+
+    .left_info  {
+        padding: 30px;
+    }
+}
+}
+
+@media screen and (max-width: 450px) {
+/* На устройства 324px*/
+
+.info_card_img {
+    width: 288px;
+    height: 184px;
+}
+
+
+.info_card {
+    padding: 0;
+    font-size: 18px;
+
+    .left_info  {
+        padding: 15px;
+    }
+    .left_info{
+    p {
+        font-size: 18px;
+    }
+}
+}
+}

@@ -10,3 +10,41 @@
         cursor: pointer;
     }
 }
+
+.footer_mobile {
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    /* На устройства 1024px*/
+}
+
+@media screen and (max-width: 1010px) {
+
+/* На устройства 768px*/
+}
+
+@media screen and (max-width: 754px) {
+/* На устройства 480px*/
+
+.footer_mobile {
+    display: flex;
+    margin: 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--color-opacity-black);
+    height: 70px;
+}
+
+.footer {
+    display: none;
+}
+
+}
+
+@media screen and (max-width: 450px) {
+/* На устройства 324px*/
+
+}

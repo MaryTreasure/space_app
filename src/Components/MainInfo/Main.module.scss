@@ -3,7 +3,7 @@
     background-image:linear-gradient( to right, rgba(17, 21, 42, 1) 120px, rgba(255, 255, 255, 0)),  url("../../images/mainInfo/planet.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    width: 700px;
+    max-width: 700px;
     height: 700px;
     display: flex;
     align-items: center;
@@ -30,4 +30,54 @@
     text-decoration: none;
     text-align: center;
 
+}
+
+@media screen and (max-width: 1200px) {
+    /* На устройства 1024px*/
+}
+
+@media screen and (max-width: 1010px) {
+
+/* На устройства 768px*/
+}
+
+@media screen and (max-width: 754px) {
+/* На устройства 480px*/
+
+.mainHeader {
+    font-size: 134px;
+}
+.main_page {
+    background-image:linear-gradient( to right, rgba(17, 21, 42, 1) 120px, rgba(255, 255, 255, 0)),  url("../../images/mainInfo/mobile-medium.png");
+    background-size: auto;
+    height: 500px;
+    width: 480px;
+    display: flex;
+    justify-content: center;
+}
+
+.main_btn {
+    font-size: 18px;
+}
+}
+
+@media screen and (max-width: 450px) {
+/* На устройства 324px*/
+
+.mainHeader {
+    font-size: 88px;
+}
+
+.main_page {
+    background-image:linear-gradient( to right, rgba(17, 21, 42, 1) 50px, rgba(255, 255, 255, 0)),  url("../../images/mainInfo/mobile-small.png");
+    background-size: 100% 100%;
+    height: 320px;
+    width: 324px;
+    display: flex;
+    justify-content: center;
+
+}
+.main_btn {
+    width: 290px;
+}
 }

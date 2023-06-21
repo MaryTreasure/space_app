@@ -9,4 +9,15 @@
       margin: auto;
     }
   }
+
+  @media screen and (max-width: 1200px) {
+    /* На устройства 1024px*/
+    .main_wrapper {
+      .content_wrapper {
+        margin-left: 15px;
+        margin-right: 15px;
+      }
+    }
+
+}
   
