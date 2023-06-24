@@ -7,9 +7,9 @@ interface IProps {
 
 export const LayoutsPlanets = ({ children }: IProps) => {
   return (
-    <div>
+    <>
       <PlanetsMenu />
       <div>{children}</div>
-    </div>
+    </>
   );
 };

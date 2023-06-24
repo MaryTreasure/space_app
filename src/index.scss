@@ -34,4 +34,19 @@ body {
   #root {
     height: 100%;
   }
+
+  @media screen and (max-width: 754px) {
+    /* На устройства 480px*/
+    body {
+    p {
+      font-size: var(--font-size-regular-mobile);
+    }
+    h1 {
+      font-size: var(--heading-big-mobile);
+    }
+    h2 {
+      font-size: var(--heading-medium-mobile)
+    }
+  }
+  }
   

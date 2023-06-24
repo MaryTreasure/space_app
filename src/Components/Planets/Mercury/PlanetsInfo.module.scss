@@ -29,22 +29,172 @@
 .facts {
     max-width: 1800px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     row-gap: 50px;
+    column-gap: 50px;
     margin: 50px auto;
 
     .factCard {
         max-width: 565px;
-        height: 381px;
+        min-height: 381px;
         border: var(--border);
         box-sizing: border-box;
-        padding: 20px 42px;
+        
         p {
             font-size: 20px;
+            padding: 20px 42px;
         }
         h2 {
-            margin: 0;
+            margin: 10px 0;
             text-align: center;
         }
     }
+    .factCard img {
+        width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+
+    .mainImg {
+        .mainImg img {
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+        }
+    }
+}
+
+@media screen and (max-width: 1792px) {
+
+    .posterText {
+        padding: 0 15px; 
+    }
+
+    .mainBlock {
+        padding: 0 15px;
+    }
+    .facts {
+        padding: 0 15px;
+    }
+
+}
+
+@media screen and (max-width: 1500px) {
+    .posterText {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .factsHeader {
+        text-align: center;
+        margin: auto;
+    }
+
+
+
+}
+
+@media screen and (max-width: 1240px) {
+        /* На устройства 1024px*/
+        .mainBlock { 
+            display: flex;
+            flex-direction: column;
+        
+        }
+        .facts {
+            grid-template-columns: repeat(2, 1fr);
+            max-width: 994px;
+            margin: auto;
+            padding: 0;
+            .factCard {
+                max-width: 465px;
+    
+            }
+        }
+        .factsHeader {
+            max-width: 450px;
+            text-align: center;
+        }
+
+
+}
+
+@media screen and (max-width: 1010px) {
+
+    /* На устройства 768px*/
+    .facts {
+
+        .factCard {
+            max-width: 465px;
+            height: 591px;
+
+        }
+}
+}
+
+@media screen and (max-width: 754px) {
+    /* На устройства 480px*/
+    .facts {
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 994px;
+        margin: auto;
+        padding: 0;
+        .factCard {
+            margin: auto;
+            max-width: 446px;
+            height: 500px;
+
+        }
+    }
+    .posterText {
+        max-width: 450px;
+        margin: auto;
+        margin-bottom: 50px;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .mainBlock {
+        max-width: 450px;
+        padding: 0;
+    }
+    .mainImg img {
+        width: 442px;
+        height: 100%;
+
+    }
+    .mainText {
+        h2 {
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    /* На устройства 324px*/
+
+    .facts {
+        .factCard {
+            max-width: 294px;
+            height: 750px;
+
+        }
+    }
+    .posterText {
+        max-width: 294px;
+    }
+    .mainBlock {
+        max-width: 294px;
+        padding: 0;
+    }
+    .mainImg img {
+        width: 290px;
+        height: 100%;
+
+    }
+    .mainText {
+        h2 {
+            text-align: center;
+        }
+    }
+    
 }

@@ -13,7 +13,7 @@ export const SolarSystem = () => {
       <h1 className={styles.header}>Solar System</h1>
       <div className={styles.block}>
         <div className={styles.textBlock}>
-          <h2>Our Solar System</h2>
+          <h2 className={styles.headingMedium}>Our Solar System</h2>
           <p>
             The solar system is our slice of space, the only area where we can navigate that we can
             study with the help of satellites, and not just observe through a telescope.
@@ -22,12 +22,12 @@ export const SolarSystem = () => {
             Learn more <img src={arrow} alt="arrow" />
           </Link>
         </div>
-        <img src={solarSystem} alt="solarSystem" />
+        <div className={styles.poster_img}><img src={solarSystem} alt="solarSystem" /></div>
       </div>
-      <div className={styles.block}>
-        <img src={sun} alt="sun" />
+      <div className={styles.block_reverse}>
+        <div className={styles.poster_img}><img src={sun} alt="sun" /></div>
         <div className={styles.textBlock}>
-          <h2>Sun</h2>
+          <h2 className={styles.headingMedium}>Sun</h2>
           <p>
             People realized long ago that life on Earth would not exist. They observed the Sun and,
             creating observatories, solved such questions as why the Sun shines during the day, what
@@ -41,7 +41,7 @@ export const SolarSystem = () => {
       </div>
       <div className={styles.block}>
         <div className={styles.textBlock}>
-          <h2>Kuiper Belt</h2>
+          <h2 className={styles.headingMedium}>Kuiper Belt</h2>
           <p>
             The region of the solar system beyond the orbit of Neptune. It extends at distances of
             30 - 55 AU. from the sun. The first objects in the Kuiper belt were discovered in 1992,
@@ -51,7 +51,7 @@ export const SolarSystem = () => {
           Learn more <img src={arrow} alt="arrow" />
           </Link>
         </div>
-        <img src={kuiperBelt} alt="kuiperBelt" />
+        <div className={styles.poster_img}><img src={kuiperBelt} alt="kuiperBelt" /></div>
       </div>
     </>
   );

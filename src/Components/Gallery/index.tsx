@@ -9,7 +9,7 @@ interface IProps {
 
 export const Gallery = ({ id, camera, img_src }: IProps) => {
   return (
-    <div>
+    <div className={styles.mars_img}>
       <img className={styles.img_item} src={img_src} alt="" />
     </div>
   );

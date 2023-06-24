@@ -1,4 +1,5 @@
 .content {
+    max-width: 1800px;
     margin: 50px 0;
     .heading {
         text-transform: none;
@@ -18,12 +19,43 @@
         font-size: 30px;
     }
 }
-.back_button {
-    display: inline-block;
-    margin-top: 50px;
-    color: var(--color-white);
-    text-decoration: none;
-    font-size: 20px;
-    padding: 20px;
-    border: var(--border);
- }
+
+
+ @media screen and (max-width: 1500px) {
+
+}
+
+@media screen and (max-width: 1200px) {
+        /* На устройства 1024px*/
+        .content {
+        .mars_img {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+@media screen and (max-width: 1010px) {
+
+    /* На устройства 768px*/
+}
+
+@media screen and (max-width: 754px) {
+    /* На устройства 480px*/
+    .content {
+        .mars_img {
+            grid-template-columns: 1fr;
+        }
+        .heading {
+            font-size: 40px;
+        }
+}
+}
+
+@media screen and (max-width: 450px) {
+    /* На устройства 324px*/
+    .content {
+        .heading {
+            font-size: 35px;
+        }
+}
+}

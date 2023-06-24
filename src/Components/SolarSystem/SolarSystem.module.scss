@@ -3,7 +3,8 @@
 
 }
 
-.block {
+.block,
+.block_reverse {
     max-width: 1800px;
     display: flex;
     justify-content: space-between;
@@ -22,6 +23,47 @@
             width: 220px;
             border: var(--border);
         }
+
     }
 
+    .poster_img img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+
+    }
+
+}
+
+@media screen and (max-width: 1680px) {
+    .block {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+        /* На устройства 1024px*/
+
+}
+
+@media screen and (max-width: 1010px) {
+
+    /* На устройства 768px*/
+    .block {
+        display: flex;
+        flex-direction: column;
+    }
+    .block_reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 754px) {
+    /* На устройства 480px*/
+}
+
+@media screen and (max-width: 450px) {
+    /* На устройства 324px*/
 }

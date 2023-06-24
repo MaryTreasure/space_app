@@ -10,7 +10,7 @@ export const Mercury = () => {
     <LayoutsPlanets>
       <>
         <div className={styles.mainBlock}>
-          <img src={MercuryImg} alt="arrow" />
+          <div className={styles.mainImg}><img src={MercuryImg} alt="arrow" /></div>
           <div className={styles.mainText}>
             <h2>Mercury</h2>
             <p>
@@ -86,7 +86,7 @@ export const Mercury = () => {
               dwarf planets, although they do not yet have this status officially.
             </p>
           </div>
-          <div>
+          <div className={styles.factCard}>
             <img src={Planet} alt="galaxy" />
           </div>
 
@@ -97,7 +97,7 @@ export const Mercury = () => {
               one knows yet how these bodies got to where they are now.
             </p>
           </div>
-          <div>
+          <div className={styles.factCard}>
             <img src={Sky} alt="planets" />
           </div>
 
