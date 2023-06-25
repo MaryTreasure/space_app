@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import { LayoutsPlanets } from '../../../Commons/LayoutsPlanets';
-import styles from './Jupiter.module.scss';
+import styles from '../PlanetsInfo.module.scss';
 import JupiterMain from '../../../images/planets/jupiter/jupiter-main.png';
 import JupiterImg from '../../../images/planets/jupiter/jupiter.jpg';
 import Sky from '../../../images/planets/jupiter/sky.jpg';
@@ -11,7 +11,7 @@ export const Jupiter = () => {
     <LayoutsPlanets>
       <>
         <div className={styles.mainBlock}>
-          <img src={JupiterMain} alt="arrow" />
+          <div className={styles.mainImg}><img src={JupiterMain} alt="arrow" /></div>
           <div className={styles.mainText}>
             <h2>Jupiter</h2>
             <p>
@@ -48,7 +48,7 @@ export const Jupiter = () => {
         </div>
         <h2 className={styles.factsHeader}>Top 10 facts about the planet</h2>
         <div className={styles.facts}>
-          <div>
+          <div className={styles.factCard}>
             <img src={Sky} alt="galaxy" />
           </div>
           <div className={styles.factCard}>
@@ -89,7 +89,7 @@ export const Jupiter = () => {
             <h2>6</h2>
             <p>A Jupiter day lasts only about 10 hours, but a year is almost 12 years.</p>
           </div>
-          <div>
+          <div className={styles.factCard}>
             <img src={JupiterImg} alt="planets" />
           </div>
 

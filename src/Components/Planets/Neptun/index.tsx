@@ -2,7 +2,7 @@
 import React from 'react';
 
 import { LayoutsPlanets } from '../../../Commons/LayoutsPlanets';
-import styles from './Neptun.module.scss';
+import styles from '../PlanetsInfo.module.scss';
 import NeptunMain from '../../../images/planets/neptun/neptun-main.png';
 import Sky from '../../../images/planets/neptun/sky.jpg';
 import NeptunImg from '../../../images/planets/neptun/neptun.jpg';
@@ -12,7 +12,7 @@ export const Neptun = () => {
     <LayoutsPlanets>
       <>
         <div className={styles.mainBlock}>
-          <img src={NeptunMain} alt="arrow" />
+          <div className={styles.mainImg}><img src={NeptunMain} alt="arrow" /></div>
           <div className={styles.mainText}>
             <h2>Neptune</h2>
             <p>
@@ -71,7 +71,7 @@ export const Neptun = () => {
               the title of "the most distant planet".
             </p>
           </div>
-          <div>
+          <div className={styles.factCard}>
             <img src={Sky} alt="galaxy" />
           </div>
 
@@ -132,7 +132,7 @@ export const Neptun = () => {
               a dwarf planet) is sometimes closer to the Sun than Neptune.
             </p>
           </div>
-          <div>
+          <div className={styles.factCard}>
             <img src={NeptunImg} alt="planets" />
           </div>
         </div>

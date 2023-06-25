@@ -1,6 +1,6 @@
 import React from 'react';
 import MercuryImg from '../../../images/planets/mercury/mercury.png';
-import styles from './PlanetsInfo.module.scss';
+import styles from '../PlanetsInfo.module.scss';
 import Planet from '../../../images/planets/mercury/planet.jpg';
 import Sky from '../../../images/planets/mercury/sky.jpg';
 import { LayoutsPlanets } from '../../../Commons/LayoutsPlanets';

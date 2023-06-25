@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import { LayoutsPlanets } from '../../../Commons/LayoutsPlanets';
-import styles from './Venus.module.scss'
+import styles from '../PlanetsInfo.module.scss'
 import VenusImg from '../../../images/planets/venus/venus-main.png';
 import Galaxy from '../../../images/planets/venus/galaxy.jpg';
 import Sky from '../../../images/planets/venus/sky.jpg';
@@ -11,7 +11,7 @@ export const Venus = () => {
     <LayoutsPlanets>
       <>
         <div className={styles.mainBlock}>
-          <img src={VenusImg} alt="arrow" />
+          <div className={styles.mainImg}><img src={VenusImg} alt="arrow" /></div>
           <div className={styles.mainText}>
             <h2>Venus</h2>
             <p>
@@ -75,7 +75,7 @@ export const Venus = () => {
               while the rest crumble and burn.
             </p>
           </div>
-          <div>
+          <div className={styles.factCard}>
             <img src={Galaxy} alt="galaxy" />
           </div>
           <div className={styles.factCard}>
@@ -106,7 +106,7 @@ export const Venus = () => {
             <h2>8</h2>
             <p>Sulfuric acid rains on Venus.</p>
           </div>
-          <div>
+          <div className={styles.factCard}>
             <img src={Sky} alt="planets" />
           </div>
           <div className={styles.factCard}>

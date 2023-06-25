@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import { LayoutsPlanets } from '../../../Commons/LayoutsPlanets';
-import styles from './Earth.module.scss';
+import styles from '../PlanetsInfo.module.scss';
 import EarthMain from '../../../images/planets/earth/earth-main.png';
 import EarthDark from '../../../images/planets/earth/earth-dark.jpg';
 import EarthImg from '../../../images/planets/earth/earth.jpg';
@@ -11,7 +11,7 @@ export const Earth = () => {
     <LayoutsPlanets>
       <>
         <div className={styles.mainBlock}>
-          <img src={EarthMain} alt="arrow" />
+          <div className={styles.mainImg}><img src={EarthMain} alt="arrow" /></div>
           <div className={styles.mainText}>
             <h2>Earth</h2>
             <p>
@@ -66,7 +66,7 @@ export const Earth = () => {
               pollution over the Celestial Empire is clearly visible.
             </p>
           </div>
-          <div>
+          <div className={styles.factCard}>
             <img src={EarthDark} alt="galaxy" />
           </div>
           <div className={styles.factCard}>
@@ -93,7 +93,7 @@ export const Earth = () => {
               Richter scale - occurred on May 22, 1960 in Chile.
             </p>
           </div>
-          <div>
+          <div className={styles.factCard}>
             <img src={EarthImg} alt="planets" />
           </div>
 

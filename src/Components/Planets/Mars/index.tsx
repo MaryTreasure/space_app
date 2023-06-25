@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import { LayoutsPlanets } from '../../../Commons/LayoutsPlanets';
-import styles from './Mars.module.scss';
+import styles from '../PlanetsInfo.module.scss';
 import MarsMain from '../../../images/planets/mars/mars-main.png';
 import MarsImg from '../../../images/planets/mars/mars.jpg';
 import Landscape from '../../../images/planets/mars/landscape.jpg';
@@ -11,7 +11,7 @@ export const Mars = () => {
     <LayoutsPlanets>
       <>
         <div className={styles.mainBlock}>
-          <img src={MarsMain} alt="arrow" />
+          <div className={styles.mainImg}><img src={MarsMain} alt="arrow" /></div>
           <div className={styles.mainText}>
             <h2>Mars</h2>
             <p>
@@ -74,7 +74,7 @@ export const Mars = () => {
               the atmosphere. Hence its reddish-reddish color.
             </p>
           </div>
-          <div>
+          <div className={styles.factCard}>
             <img src={Landscape} alt="galaxy" />
           </div>
           <div className={styles.factCard}>
@@ -137,7 +137,7 @@ export const Mars = () => {
               about 8 months.
             </p>
           </div>
-          <div>
+          <div className={styles.factCard}>
             <img src={MarsImg} alt="planets" />
           </div>
         </div>

@@ -2,7 +2,7 @@
 import React from 'react';
 
 import { LayoutsPlanets } from '../../../Commons/LayoutsPlanets';
-import styles from './Uranus.module.scss';
+import styles from '../PlanetsInfo.module.scss';
 import UranusMain from '../../../images/planets/uranus/uranus-main.png';
 import Sky from '../../../images/planets/uranus/sky.jpg';
 import UranusImg from '../../../images/planets/uranus/uranus.jpg';
@@ -12,7 +12,7 @@ export const Uranus = () => {
     <LayoutsPlanets>
       <>
         <div className={styles.mainBlock}>
-          <img src={UranusMain} alt="arrow" />
+          <div className={styles.mainImg}><img src={UranusMain} alt="arrow" /></div>
           <div className={styles.mainText}>
             <h2>Uranus</h2>
             <p>
@@ -56,7 +56,7 @@ export const Uranus = () => {
               methane.
             </p>
           </div>
-          <div>
+          <div className={styles.factCard}>
             <img src={Sky} alt="galaxy" />
           </div>
 
@@ -109,7 +109,7 @@ export const Uranus = () => {
               system found in the Solar System after Saturn.
             </p>
           </div>
-          <div>
+          <div className={styles.factCard}>
             <img src={UranusImg} alt="planets" />
           </div>
 

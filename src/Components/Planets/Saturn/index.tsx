@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import { LayoutsPlanets } from '../../../Commons/LayoutsPlanets';
-import styles from './Saturn.module.scss';
+import styles from '../PlanetsInfo.module.scss';
 import SaturnMain from '../../../images/planets/saturn/saturn-main.png';
 import SaturnImg from '../../../images/planets/saturn/saturn.jpg';
 import Asteroids from '../../../images/planets/saturn/asteroids.jpg';
@@ -11,7 +11,7 @@ export const Saturn = () => {
     <LayoutsPlanets>
       <>
         <div className={styles.mainBlock}>
-          <img src={SaturnMain} alt="arrow" />
+          <div className={styles.mainImg}><img src={SaturnMain} alt="arrow" /></div>
           <div className={styles.mainText}>
             <h2>Saturn</h2>
             <p>
@@ -76,7 +76,7 @@ export const Saturn = () => {
               under the thickness of ice is theoretically allowed.
             </p>
           </div>
-          <div>
+          <div className={styles.factCard}>
             <img src={SaturnImg} alt="galaxy" />
           </div>
 
@@ -116,7 +116,7 @@ export const Saturn = () => {
               planet in the solar system.
             </p>
           </div>
-          <div>
+          <div className={styles.factCard}>
             <img src={Asteroids} alt="planets" />
           </div>
           <div className={styles.factCard}>

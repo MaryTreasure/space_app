@@ -10,7 +10,7 @@ export const SolarSystemInfo = () => {
     <>
       <h1 className={styles.header}>Our Solar System</h1>
       <div className={styles.posterBlock}>
-        <img src={SolarSystem} alt="Solar System" />
+        <div className={styles.mainImg}><img src={SolarSystem} alt="Solar System" /></div>
         <div className={styles.posterText}>
           <div>
             <p className={styles.posterTextHeader}>Planets/dwarf planets</p>
@@ -79,7 +79,7 @@ export const SolarSystemInfo = () => {
             them, and they burn up in its atmosphere without reaching our planet.
           </p>
         </div>
-        <div>
+        <div className={styles.factCard}>
           <img src={Galaxy} alt="galaxy" />
         </div>
         <div className={styles.factCard}>
@@ -89,7 +89,7 @@ export const SolarSystemInfo = () => {
             a long period of revolution.
           </p>
         </div>
-        <div>
+        <div className={styles.factCard}>
           <img src={Planets} alt="planets" />
         </div>
         <div className={styles.factCard}>

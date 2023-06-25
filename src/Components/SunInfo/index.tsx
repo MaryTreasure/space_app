@@ -10,7 +10,7 @@ export const SunInfo = () => {
     <>
       <h1 className={styles.header}>SUN</h1>
       <div className={styles.posterBlock}>
-        <img src={SunBig} alt="Solar System" />
+        <div className={styles.mainImg}><img src={SunBig} alt="Solar System" /></div>
         <div className={styles.posterText}>
           <div>
             <p className={styles.posterTextHeader}>Age</p>
@@ -50,7 +50,7 @@ export const SunInfo = () => {
             True, due to high temperatures, it exists on the star only in the form of steam.
           </p>
         </div>
-        <div>
+        <div className={styles.factCard}>
           <img src={SunSmall} alt="galaxy" />
         </div>
         <div className={styles.factCard}>
@@ -89,7 +89,7 @@ export const SunInfo = () => {
             by ten percent, which will entail the end of all life on Earth.
           </p>
         </div>
-        <div>
+        <div className={styles.factCard}>
           <img src={Eclipce} alt="planets" />
         </div>
         <div className={styles.factCard}>

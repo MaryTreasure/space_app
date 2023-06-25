@@ -10,7 +10,7 @@ export const KuiperBeltInfo = () => {
     <>
       <h1 className={styles.header}>Kuiper Belt</h1>
       <div className={styles.posterBlock}>
-        <img src={KuiperBelt} alt="Solar System" />
+        <div className={styles.mainImg}><img src={KuiperBelt} alt="Solar System" /></div>
         <div className={styles.posterText}>
           <div>
             <p className={styles.posterTextHeader}>Was opend</p>
@@ -41,7 +41,7 @@ export const KuiperBeltInfo = () => {
       </div>
       <h2 className={styles.factsHeader}>Top 10 facts about Kuiper Belt</h2>
       <div className={styles.facts}>
-        <div>
+        <div className={styles.factCard}>
           <img src={Galaxy} alt="galaxy" />
         </div>
         <div className={styles.factCard}>
@@ -126,7 +126,7 @@ export const KuiperBeltInfo = () => {
             different peoples. For example, Orc is the god of death in the Etruscan pantheon
           </p>
         </div>
-        <div>
+        <div className={styles.factCard}>
           <img src={Stars} alt="planets" />
         </div>
       </div>
