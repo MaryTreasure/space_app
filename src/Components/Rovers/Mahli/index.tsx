@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Gallery.module.scss';
+import styles from './Mahli.module.scss';
 
 interface IProps {
   id: number;
@@ -7,7 +7,7 @@ interface IProps {
   img_src: string;
 }
 
-export const Gallery = ({ id, camera, img_src }: IProps) => {
+export const Mahli = ({ id, camera, img_src }: IProps) => {
   return (
     <div className={styles.mars_img}>
       <img className={styles.img_item} src={img_src} alt="" />

@@ -1,7 +1,7 @@
 export const routes = {
   MAIN: '/',
   APOD: '/apod',
-  GALLERY: '/gallery',
+  MAST: '/mast',
   AUTH: '/auth',
   INFOPAGE: '/infopage',
   PLANETS: '/planets',
@@ -15,5 +15,9 @@ export const routes = {
   JUPITER: '/jupiter',
   SATURN: '/saturn',
   URANUS: '/uranus',
-  NEPTUN: '/neptun'
+  NEPTUN: '/neptun',
+  MARSROVERS: '/marsrovers',
+  CHEMCAM: '/chemcam',
+  FHAZ: '/fhaz',
+  MAHLI: '/mahli',
 };

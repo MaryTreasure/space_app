@@ -1,0 +1,61 @@
+.content {
+    max-width: 1800px;
+    margin: 50px 0;
+    .heading {
+        text-transform: none;
+        text-align: center;
+        margin: 50px 0;
+    }
+    
+    .mars_img {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 50px;
+    }
+
+    
+    .loading {
+        color: var(--color-orange);
+        font-size: 30px;
+    }
+}
+
+
+ @media screen and (max-width: 1500px) {
+
+}
+
+@media screen and (max-width: 1200px) {
+        /* На устройства 1024px*/
+        .content {
+        .mars_img {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+@media screen and (max-width: 1010px) {
+
+    /* На устройства 768px*/
+}
+
+@media screen and (max-width: 754px) {
+    /* На устройства 480px*/
+    .content {
+        .mars_img {
+            grid-template-columns: 1fr;
+        }
+        .heading {
+            font-size: 40px;
+        }
+}
+}
+
+@media screen and (max-width: 450px) {
+    /* На устройства 324px*/
+    .content {
+        .heading {
+            font-size: 35px;
+        }
+}
+}

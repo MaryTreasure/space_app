@@ -32,7 +32,7 @@ export const InfoPosts = () => {
             universe is featured, along with a brief explanation written by a professional
             astronomer.
           </p>
-          <Link to={routes.GALLERY}>
+          <Link to={routes.MARSROVERS}>
             Mars rovers photo <img src={arrow} alt="arrow" />
           </Link>
         </div>

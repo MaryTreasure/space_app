@@ -27,7 +27,7 @@ export const Header = () => {
             <Link to={routes.APOD}>Astronomy picture of the day</Link>
           </li>
           <li>
-            <Link to={routes.GALLERY}>Mars rovers photo</Link>
+            <Link to={routes.MARSROVERS}>Mars rovers photo</Link>
           </li>
           <li>
             <Link to={routes.SOLARSYSTEM}>Solar System</Link>

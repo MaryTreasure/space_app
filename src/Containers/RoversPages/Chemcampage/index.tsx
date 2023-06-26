@@ -1,24 +1,24 @@
 import React, { useEffect } from 'react';
-import { Gallery } from '../../Components/Gallery';
 import { useDispatch, useSelector } from 'react-redux';
-import { getPhoto } from '../../store/galleryData/effects';
+import { getPhoto } from '../../../store/marsRoversData/chemcam/effects';
 import styles from './GalleryPage.module.scss';
 import { Link } from 'react-router-dom';
 import arrow from '../../images/btnToHome/arrow.png';
 import {
-  getPhotoIsError,
-  getPhotoIsLoading,
-  getPhotoIsSuccess,
-  getPhotoListSelector,
-} from '../../store/galleryData/selectors';
-import { routes } from '../../utils/constants/routes';
+  getPhotoCehmcamIsError,
+  getPhotoCehmcamIsLoading,
+  getPhotoCehmcamIsSuccess,
+  getPhotoCehmcamListSelector,
+} from '../../../store/marsRoversData/chemcam/selectors';
+import { routes } from '../../../utils/constants/routes';
+import { Chemcam } from '../../../Components/Rovers/Chemcam';
 
-export const GalleryPage = () => {
+export const ChemcamPage = () => {
   const dispatch = useDispatch();
-  const photo = useSelector(getPhotoListSelector);
-  const isSuccess = useSelector(getPhotoIsSuccess);
-  const isError = useSelector(getPhotoIsError);
-  const isLoading = useSelector(getPhotoIsLoading);
+  const photo = useSelector(getPhotoCehmcamListSelector);
+  const isSuccess = useSelector(getPhotoCehmcamIsSuccess);
+  const isError = useSelector(getPhotoCehmcamIsError);
+  const isLoading = useSelector(getPhotoCehmcamIsLoading);
 
   useEffect(() => {
     dispatch(getPhoto());
@@ -32,7 +32,7 @@ export const GalleryPage = () => {
           {isSuccess &&
             photo.length > 0 &&
             photo.map(({ id, camera, img_src }) => (
-              <Gallery key={id} camera={camera} img_src={img_src} id={id} />
+              <Chemcam key={id} camera={camera} img_src={img_src} id={id} />
             ))}
           {isLoading && <span className={styles.loading}>Loading...</span>}
           {isError && <span>Error</span>}
