@@ -30,7 +30,7 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-    margin-top: 50px;
+    margin: 50px 0;
 }
 
 .listItem {
@@ -42,6 +42,11 @@
     justify-content: center;
     margin: auto;
 }
+
+.listItem:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
 .listItem a {
     color: var(--color-white);
     text-decoration: none;
@@ -51,4 +56,46 @@
 .listHeading {
     text-align: center;
     margin-top: 100px;
+}
+
+
+@media screen and (max-width: 1200px) {
+    /* На устройства 1024px*/
+    .mainBlock {
+        flex-direction: column;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+@media screen and (max-width: 1010px) {
+
+/* На устройства 768px*/
+}
+
+@media screen and (max-width: 754px) {
+/* На устройства 480px*/
+.list {
+    padding: 0;
+}
+    .listItem {
+        width: 450px;
+        padding: 0;
+    }
+    .listItem a {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+/* На устройства 324px*/
+
+    .listItem {
+        width: 294px;
+        height: 90px;
+    }
+    .listItem a {
+        padding: 20px;
+        text-align: center;
+    }
 }
