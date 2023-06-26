@@ -9,9 +9,9 @@ interface IProps {
 
 export const Layouts = ({ children }: IProps) => {
   return (
-    <div className={styles.main_wrapper}>
+    <div className={styles.mainWrapper}>
       <Header />
-      <div className={styles.content_wrapper}>{children}</div>
+      <div className={styles.contentWrapper}>{children}</div>
       <Footer />
     </div>
   );

@@ -22,7 +22,7 @@ export const Footer = () => {
       </a>
     </div>
 
-    <div className={styles.footer_mobile}>
+    <div className={styles.footerMobile}>
       <a>
         <img src={YoutubeIconMob} alt="Facebook" />
       </a>

@@ -22,10 +22,10 @@ export const SolarSystem = () => {
             Learn more <img src={arrow} alt="arrow" />
           </Link>
         </div>
-        <div className={styles.poster_img}><img src={solarSystem} alt="solarSystem" /></div>
+        <div className={styles.posterImg}><img src={solarSystem} alt="solarSystem" /></div>
       </div>
-      <div className={styles.block_reverse}>
-        <div className={styles.poster_img}><img src={sun} alt="sun" /></div>
+      <div className={styles.blockReverse}>
+        <div className={styles.posterImg}><img src={sun} alt="sun" /></div>
         <div className={styles.textBlock}>
           <h2 className={styles.headingMedium}>Sun</h2>
           <p>
@@ -51,7 +51,7 @@ export const SolarSystem = () => {
           Learn more <img src={arrow} alt="arrow" />
           </Link>
         </div>
-        <div className={styles.poster_img}><img src={kuiperBelt} alt="kuiperBelt" /></div>
+        <div className={styles.posterImg}><img src={kuiperBelt} alt="kuiperBelt" /></div>
       </div>
     </>
   );

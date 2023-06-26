@@ -11,9 +11,9 @@ import solarSystem from '../../images/infoPosts/solarSystem.jpg';
 export const InfoPosts = () => {
   return (
     <>
-      <div className={styles.info_card}>
-        <div className={styles.info_card_img}><img src={apod} alt="ApodPhoto" /></div>
-        <div className={styles.left_info}>
+      <div className={styles.infoCard}>
+        <div className={styles.infoCardImg}><img src={apod} alt="ApodPhoto" /></div>
+        <div className={styles.leftInfo}>
           <p>
             Discover the cosmos! Each day a different image or photograph of our fascinating
             universe is featured, along with a brief explanation written by a professional
@@ -24,9 +24,9 @@ export const InfoPosts = () => {
           </Link>
         </div>
       </div>
-      <div className={styles.info_card}>
-        <div className={styles.info_card_img}><img src={marsPhoto} alt="MarsPhoto" /></div>
-        <div className={styles.left_info}>
+      <div className={styles.infoCard}>
+        <div className={styles.infoCardImg}><img src={marsPhoto} alt="MarsPhoto" /></div>
+        <div className={styles.leftInfo}>
           <p>
             Discover the cosmos! Each day a different image or photograph of our fascinating
             universe is featured, along with a brief explanation written by a professional
@@ -37,9 +37,9 @@ export const InfoPosts = () => {
           </Link>
         </div>
       </div>
-      <div className={styles.info_card}>
-        <div className={styles.info_card_img}><img src={solarSystem} alt="Solar system" /></div>
-        <div className={styles.left_info}>
+      <div className={styles.infoCard}>
+        <div className={styles.infoCardImg}><img src={solarSystem} alt="Solar system" /></div>
+        <div className={styles.leftInfo}>
           <p>
             The solar system formed almost five billion years ago. It all started with a rotating
             cloud of dust and gas. The center of the cloud began to collapse, forming the Sun. Due
@@ -50,9 +50,9 @@ export const InfoPosts = () => {
           </Link>
         </div>
       </div>
-      <div className={styles.info_card}>
-        <div className={styles.info_card_img}><img src={planets} alt="Planets" /></div>
-        <div className={styles.left_info}>
+      <div className={styles.infoCard}>
+        <div className={styles.infoCardImg}><img src={planets} alt="Planets" /></div>
+        <div className={styles.leftInfo}>
           <p>
             The solar system is a planetary system that includes the central star - the Sun - and
             all natural space objects that revolve around the Sun. It was formed by gravitational

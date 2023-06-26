@@ -1,6 +1,6 @@
 @import "../../vars.scss";
 
-.main_menu {
+.mainMenu {
     display: flex;
     position: relative;
     justify-content: space-between;
@@ -25,7 +25,7 @@
         align-self: center;
     }
     
-    .main_logo {
+    .mainLogo {
         
         font-size: 40px;
         color: var(--color-orange);
@@ -36,7 +36,7 @@
 .burger {
     display: none;
 }
-.left_menu {
+.leftMenu {
     display: flex;
     list-style: none;
 }
@@ -51,7 +51,7 @@
         z-index: 10;
     }
 
-    .left_menu {
+    .leftMenu {
         flex-direction: column;
         align-items: center;
         position: fixed;
@@ -77,28 +77,19 @@
         .burger {
             right: 15px;
         }
-        .main_menu {
+        .mainMenu {
             .logo {
                 margin-left: 15px;
             }
         }
 }
 
-@media screen and (max-width: 1010px) {
-
-    /* На устройства 768px*/
-}
-
 @media screen and (max-width: 754px) {
     /* На устройства 480px*/
 
-    .main_menu {
-        .main_logo {
+    .mainMenu {
+        .mainLogo {
             font-size: 30px;
         }
     }
-}
-
-@media screen and (max-width: 450px) {
-    /* На устройства 324px*/
 }

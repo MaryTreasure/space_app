@@ -3,15 +3,12 @@ import { Mast } from '../../../Components/Rovers/Mast';
 import { useDispatch, useSelector } from 'react-redux';
 import { getPhoto } from '../../../store/galleryData/effects';
 import styles from './MastPage.module.scss';
-import { Link } from 'react-router-dom';
-import arrow from '../../images/btnToHome/arrow.png';
 import {
   getPhotoIsError,
   getPhotoIsLoading,
   getPhotoIsSuccess,
   getPhotoListSelector,
 } from '../../../store/galleryData/selectors';
-import { routes } from '../../../utils/constants/routes';
 
 export const MastPage = () => {
   const dispatch = useDispatch();
@@ -28,7 +25,7 @@ export const MastPage = () => {
     <>
       <div className={styles.content}>
         <h1 className={styles.heading}>View of Mars from rover</h1>
-        <div className={styles.mars_img}>
+        <div className={styles.marsImg}>
           {isSuccess &&
             photo.length > 0 &&
             photo.map(({ id, camera, img_src }) => (

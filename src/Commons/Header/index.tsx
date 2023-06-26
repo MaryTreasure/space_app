@@ -11,15 +11,15 @@ export const Header = () => {
   const classes = styles.left_menu + ' ' + styles.active;
   return (
     <>
-      <header className={styles.main_menu}>
+      <header className={styles.mainMenu}>
         <div className={styles.logo}>
           <img src={Logo} alt="logo" />
-          <Link className={styles.main_logo} to={routes.MAIN}>
+          <Link className={styles.mainLogo} to={routes.MAIN}>
             space
           </Link>
         </div>
 
-        <ul className={nav ? classes : styles.left_menu}>
+        <ul className={nav ? classes : styles.leftMenu}>
           <li>
             <Link to={routes.INFOPAGE}>Home</Link>
           </li>

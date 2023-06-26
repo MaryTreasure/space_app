@@ -1,4 +1,4 @@
-.main_page {
+.mainPage {
     color: var(--color-orange);
     background-image:linear-gradient( to right, rgba(17, 21, 42, 1) 120px, rgba(255, 255, 255, 0)),  url("../../images/mainInfo/planet.png");
     background-repeat: no-repeat;
@@ -18,7 +18,7 @@
     font-weight: 600;
 }
 
-.main_btn {
+.mainBtn {
     background-color: var(--color-blue);
     border: var(--border);
     color: var(--color-white);
@@ -34,7 +34,7 @@
 
 @media screen and (max-width: 1200px) {
     /* На устройства 1024px*/
-    .main_page {
+    .mainPage {
         margin: auto;
     }
 }
@@ -50,7 +50,7 @@
 .mainHeader {
     font-size: 134px;
 }
-.main_page {
+.mainPage {
     background-image:linear-gradient( to right, rgba(17, 21, 42, 1) 120px, rgba(255, 255, 255, 0)),  url("../../images/mainInfo/mobile-medium.png");
     background-size: auto;
     height: 500px;
@@ -59,7 +59,7 @@
     justify-content: center;
 }
 
-.main_btn {
+.mainBtn {
     font-size: 18px;
 }
 }
@@ -71,7 +71,7 @@
     font-size: 88px;
 }
 
-.main_page {
+.mainPage {
     background-image:linear-gradient( to right, rgba(17, 21, 42, 1) 50px, rgba(255, 255, 255, 0)),  url("../../images/mainInfo/mobile-small.png");
     background-size: 100% 100%;
     height: 320px;
@@ -80,7 +80,7 @@
     justify-content: center;
 
 }
-.main_btn {
+.mainBtn {
     width: 290px;
 }
 }

@@ -11,17 +11,8 @@
     }
 }
 
-.footer_mobile {
+.footerMobile {
     display: none;
-}
-
-@media screen and (max-width: 1200px) {
-    /* На устройства 1024px*/
-}
-
-@media screen and (max-width: 1010px) {
-
-/* На устройства 768px*/
 }
 
 @media screen and (max-width: 754px) {
@@ -41,10 +32,5 @@
 .footer {
     display: none;
 }
-
-}
-
-@media screen and (max-width: 450px) {
-/* На устройства 324px*/
 
 }
