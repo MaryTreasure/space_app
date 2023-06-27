@@ -58,6 +58,14 @@
     margin-top: 100px;
 }
 
+@media screen and (max-width: 1685px) {
+    .mainBlock {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+}
+
 
 @media screen and (max-width: 1200px) {
     /* На устройства 1024px*/

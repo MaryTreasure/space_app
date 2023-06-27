@@ -24,6 +24,7 @@
 
 .factsHeader {
     text-align: center;
+    margin-bottom: 100px;
 }
 
 .facts {
@@ -87,6 +88,8 @@
     .factsHeader {
         text-align: center;
         margin: auto;
+        margin-bottom: 50px;
+        
     }
 
 
@@ -141,7 +144,7 @@
         .factCard {
             margin: auto;
             max-width: 446px;
-            height: 500px;
+            height: 100%;
 
         }
     }
@@ -175,7 +178,6 @@
     .facts {
         .factCard {
             max-width: 294px;
-            height: 750px;
 
         }
     }

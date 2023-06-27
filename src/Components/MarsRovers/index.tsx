@@ -10,9 +10,8 @@ export const MarsRovers = () => {
       <h1 className={styles.heading}>Mars rovers photo</h1>
       <div className={styles.mainBlock}>
         <p className={styles.text}>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. In alias vero temporibus
-          voluptatum voluptates perferendis iusto quos accusantium ad iure, accusamus optio autem
-          id, at porro inventore blanditiis? Dolores, laudantium?
+          Here you can see real photos from the surface of Mars, which are collected by NASA rovers.
+          Each rover has its own set of photos. Select the rover to see photos taken with it
         </p>
         <div className={styles.poster}>
           <img src={rover} alt="rover" />

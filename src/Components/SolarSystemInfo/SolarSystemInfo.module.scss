@@ -110,7 +110,7 @@
         grid-template-columns: repeat(2, 1fr);
         max-width: 994px;
         margin: auto;
-        padding: 0;
+        padding: 0 15px;
         .factCard {
             max-width: 465px;
 
@@ -156,7 +156,7 @@
     .factCard {
         margin: auto;
         max-width: 446px;
-        height: 500px;
+        height: 100%;
 
     }
 }
@@ -190,7 +190,7 @@
 .facts {
     .factCard {
         max-width: 294px;
-        height: 750px;
+        height: 100%;
 
     }
 }

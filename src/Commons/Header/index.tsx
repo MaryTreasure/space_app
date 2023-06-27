@@ -8,7 +8,7 @@ import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 
 export const Header = () => {
   const [nav, setNav] = useState(false);
-  const classes = styles.left_menu + ' ' + styles.active;
+  const classes = styles.leftMenu + ' ' + styles.active;
   return (
     <>
       <header className={styles.mainMenu}>
