@@ -1,6 +1,6 @@
 # SPACE-APP
 
-Приложение находится здесь [SPACE-APP](https://github.com/facebook/create-react-app).
+Приложение находится здесь [SPACE-APP](https://space-app-seven.vercel.app/).
 
 ## Информационное приложение на React с использованием NASA OPEN APIs
 
