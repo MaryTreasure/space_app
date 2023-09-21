@@ -1,18 +1,35 @@
-# Getting Started with Create React App
+# SPACE-APP
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Приложение находится здесь [SPACE-APP](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Информационное приложение на React с использованием NASA OPEN APIs
 
-In the project directory, you can run:
+### Общая информация
 
-### `npm start`
+Приложение содержит информацию о солнечной системе и ее планетах. \
+Так же, в нем содержится информация, полученная с NASA OPEN APIs, а именно: \
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Астрономическая картина дня. Ежедневно обновляемые данные содержащие фото космических объектов с текстовым описанием.\
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Фотографии поверхности планеты Марс с марсоходов. В данном разделе представлены снимки с четырех марсоходов.\
+
+### Реализация
+
+Приложение создано на React.
+
+Использованы функциональные компоненты, React-hooks.
+
+Стилизовано с помощью препроцессора SASS.
+
+Роутинг реалзован с React-router-dom.
+
+В качестве стейт-менеджера использован ReduxToolKit.
+
+Асинхронные экшены Redux-thunk.
+
+Работа с NASA OPEN APIs велась с помощью клиента Axios.
+
+Приложение полностью адаптивно под все размеры устройств.
 
 ### `npm test`
 
