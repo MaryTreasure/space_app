@@ -54,7 +54,7 @@
     .leftMenu {
         flex-direction: column;
         align-items: center;
-        position: fixed;
+        position: absolute;
         gap: 30px;
         margin: 0;
         right: -100%;
