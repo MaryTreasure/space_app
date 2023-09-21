@@ -12,7 +12,9 @@ export const InfoPosts = () => {
   return (
     <>
       <div className={styles.infoCard}>
-        <div className={styles.infoCardImg}><img src={apod} alt="ApodPhoto" /></div>
+        <div className={styles.infoCardImg}>
+          <img src={apod} alt="ApodPhoto" />
+        </div>
         <div className={styles.leftInfo}>
           <p>
             Discover the cosmos! Each day a different image or photograph of our fascinating
@@ -25,12 +27,14 @@ export const InfoPosts = () => {
         </div>
       </div>
       <div className={styles.infoCard}>
-        <div className={styles.infoCardImg}><img src={marsPhoto} alt="MarsPhoto" /></div>
+        <div className={styles.infoCardImg}>
+          <img src={marsPhoto} alt="MarsPhoto" />
+        </div>
         <div className={styles.leftInfo}>
           <p>
-            Discover the cosmos! Each day a different image or photograph of our fascinating
-            universe is featured, along with a brief explanation written by a professional
-            astronomer.
+            Click here if you want to touch the mysterious and unknown bloody planet. Here you will
+            find photos from several NASA rovers on Mars. Each rover has its own set of photos.
+            Select the rover to see photos taken with it
           </p>
           <Link to={routes.MARSROVERS}>
             Mars rovers photo <img src={arrow} alt="arrow" />
@@ -38,7 +42,9 @@ export const InfoPosts = () => {
         </div>
       </div>
       <div className={styles.infoCard}>
-        <div className={styles.infoCardImg}><img src={solarSystem} alt="Solar system" /></div>
+        <div className={styles.infoCardImg}>
+          <img src={solarSystem} alt="Solar system" />
+        </div>
         <div className={styles.leftInfo}>
           <p>
             The solar system formed almost five billion years ago. It all started with a rotating
@@ -51,7 +57,9 @@ export const InfoPosts = () => {
         </div>
       </div>
       <div className={styles.infoCard}>
-        <div className={styles.infoCardImg}><img src={planets} alt="Planets" /></div>
+        <div className={styles.infoCardImg}>
+          <img src={planets} alt="Planets" />
+        </div>
         <div className={styles.leftInfo}>
           <p>
             The solar system is a planetary system that includes the central star - the Sun - and
