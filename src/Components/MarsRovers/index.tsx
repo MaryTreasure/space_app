@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { routes } from '../../utils/constants/routes';
-import styles from './marsrovers.module.scss';
+import styles from './Rovers.module.scss';
 import rover from '../../images/marsRovers/rover.jpg';
 
 export const MarsRovers = () => {
