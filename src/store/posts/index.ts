@@ -6,6 +6,7 @@ interface IPostState {
     date: string;
     url: string;
     title: string;
+    media_type: string;
     explanation: string;
     isSuccess: boolean;
     isLoading: boolean;
@@ -19,6 +20,7 @@ const initialState: IPostState = {
     url: '',
     title: '',
     explanation: '',
+    media_type: '',
     isSuccess: false,
     isLoading: false,
     isError: false,
@@ -39,7 +41,7 @@ const slice = createSlice({
     builder.addCase(getPost.fulfilled, (state, { payload }) => {
       return {
         ...state,
-        post: { ...state.post, isLoading: false, isError: false, isSuccess: true, date: payload.date, url: payload.url, title: payload.title, explanation: payload.explanation },
+        post: { ...state.post, isLoading: false, isError: false, isSuccess: true, date: payload.date, url: payload.url, title: payload.title, explanation: payload.explanation, media_type: payload.media_type },
       };
     });
     builder.addCase(getPost.rejected, (state) => {

@@ -11,6 +11,7 @@ import {
   getUrl,
   getPostisLoading,
   getPostisSuccess,
+  getMediaType,
 } from '../../store/posts/selectors';
 
 export const PictureOfDayPage = () => {
@@ -19,6 +20,7 @@ export const PictureOfDayPage = () => {
   const url = useSelector(getUrl);
   const date = useSelector(getDate);
   const title = useSelector(getTitle);
+  const mediaType = useSelector(getMediaType);
   const explanation = useSelector(getExplanation);
   const isSuccess = useSelector(getPostisSuccess);
   const isError = useSelector(getPostIsError);
@@ -31,7 +33,7 @@ export const PictureOfDayPage = () => {
   return (
     <div>
       {isSuccess && (
-        <PictureOfDayContent url={url} title={title} date={date} explanation={explanation} />
+        <PictureOfDayContent url={url} title={title} date={date} explanation={explanation} mediaType={mediaType}/>
       )}
       {isLoading && <span className={styles.loading}>Loading...</span>}
       {isError && <span>Error</span>}
