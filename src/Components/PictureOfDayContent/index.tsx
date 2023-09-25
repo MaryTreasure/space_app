@@ -15,9 +15,12 @@ export const PictureOfDayContent = ({ url, title, date, explanation, mediaType }
   return (
     <>
       <div className={styles.content}>
-        {{ mediaType: 'video' }
+        { mediaType === 'video'
           ? (
+            <>
           <iframe className={styles.video} src={url}></iframe>
+          <p>{mediaType}</p>
+          </>
             )
           : (
           <img className={styles.picture} src={url} alt="" />
